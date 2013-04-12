@@ -1,6 +1,7 @@
 var request = require('request');
 var connect = require('connect');
 var express = require('express');
+var cache_function = require('./cache-function');
 
 var settings = {
     port : 9999
@@ -38,6 +39,8 @@ function get_server(prefix, callback) {
         }
     })
 }
+
+get_server = cache_function(get_server, {stdTTL: 24*60*60});
 
 controller.prefix = function(req, res) {
     var prefix = req.params.prefix;

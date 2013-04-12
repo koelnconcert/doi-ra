@@ -12,7 +12,8 @@
   "dependencies": {
     "request": "*",
     "connect": "*",
-    "express": "*"
+    "express": "*",
+    "node-cache": "*"
   },
   "devDependencies": {}
 }
