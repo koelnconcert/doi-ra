@@ -37,5 +37,32 @@ module.exports = {
         scope: "intellectual property in digital networks",
         url: "http://www.medra.org",
         servers: [ "0.SERV/10.MEDRA", "0.SERV/10.medra" ]
+    },
+    airiti: {
+        name: "Airity",
+        fullname: "Airity, Inc.",
+        scope: "traditional Chinese materials",
+        url: "http://doi.airiti.com",
+        servers: [ "0.SERV/10.AIRITI" ]
+    },
+    jalc: {
+        name: "JaLC",
+        fullname: "Japan Link Center",
+        scope: "scientific and academic metadata and content from holders in Japan",
+        servers: [ "0.SERV/10.JALC" ]
+    },
+    opoce: {
+        name: "OPOCE",
+        fullname: "Office des publications EU",
+        scope: "publications of all European Union entities",
+        url: "http://www.publications.eu.int/",
+        servers: [ "0.SERV/10.OPOCE" ]
+    },
+    eidr: {
+        name: "EIDR",
+        fullname: "Entertainment Identifier Registry",
+        scope: "movies, television shows, and other commercial audio/video assets",
+        url: "http://eidr.org",
+        servers: [ "0.NA/10.5240" ]
     }
 }
