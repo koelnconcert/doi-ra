@@ -30,8 +30,12 @@ function get_server(prefix, callback) {
             callback('prefix does not exist');
         } else {
             var json = JSON.parse(body);
-            var hs_serv = json.values[0].data;
-            callback(null, hs_serv);
+            var server;
+            if (json.values[0])
+                server = json.values[0].data;
+            else 
+                server = "0.NA/" + prefix;
+            callback(null, server);
         }
     })
 }
