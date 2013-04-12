@@ -1,0 +1,18 @@
+{
+  "author": "Sebastian Peters",
+  "name": "doi-ra",
+  "description": "TBD",
+  "version": "v0.0.1",
+  "engines": {
+    "node": ">=0.6.11"
+  },
+  "scripts": {
+    "start": "node ./src/app.js"
+  },
+  "dependencies": {
+    "request": "*",
+    "connect": "*",
+    "express": "*"
+  },
+  "devDependencies": {}
+}
