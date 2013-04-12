@@ -62,6 +62,10 @@ controller.doi = function(req, res) {
     res.redirect("/prefix/" + prefix)
 }
 
+controller.ras = function(req, res) {
+    res.json(ras);
+}
+
 function init() {
 	console.log("creating app...");
 	var app = express();
@@ -70,6 +74,7 @@ function init() {
 	app.get(/^\/doi\/([^\/]*)/, controller.doi);
 	app.get('/prefix/:prefix', controller.prefix);
 	app.get('/ra/:ra', controller.ra);
+	app.get('/ra', controller.ras);
 	
 	app.listen(settings.port);
 	console.log("server listening on port " + settings.port + ".");
