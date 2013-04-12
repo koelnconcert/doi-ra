@@ -10,15 +10,11 @@ var settings = {
 var ras = require('./ras.js');
 
 var servers = {};
-
 for (ra in ras) {
-    console.log(ra);
     ras[ra].servers.forEach(function(server) {
         servers[server] = ra;
     });
 }
-console.log(ras);
-console.log(servers);
 
 
 var controller = {};
