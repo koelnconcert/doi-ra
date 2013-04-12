@@ -69,6 +69,8 @@ controller.ras = function(req, res) {
 function init() {
 	console.log("creating app...");
 	var app = express();
+
+    app.use(redirectIfTrailingSlash);
 	
 	app.get('/', controller.index);
 	app.get(/^\/doi\/([^\/]*)/, controller.doi);
@@ -79,5 +81,14 @@ function init() {
 	app.listen(settings.port);
 	console.log("server listening on port " + settings.port + ".");
 }
+
+function redirectIfTrailingSlash(req, res, next) {
+    if (req.path.match(".+/$"))
+        res.redirect(req.path.slice(0,-1));
+    else
+        next();
+}
+
+
 
 init();
