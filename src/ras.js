@@ -71,5 +71,12 @@ module.exports = {
         scope: "general IDF stuff, also serving Bowker and others",
         url: "http://doi.org",
         servers: [ "0.SERV/10" ]
+    },
+    istic: {
+        name: "ISTIC",
+        fullname: "The Institute of Scientific and Technical Information of China",
+        scope: "Chinese journals, dissertations, books, conference proceedings and other literature resources, and management of scientific data sets, multi-media resources such as audio/video in China",
+        url: "http://www.doi.org.cn",
+        servers: [ "0.SERV/10.wfd" ]
     }
 }
