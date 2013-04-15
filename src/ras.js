@@ -77,6 +77,14 @@ module.exports = {
         fullname: "The Institute of Scientific and Technical Information of China",
         scope: "Chinese journals, dissertations, books, conference proceedings and other literature resources, and management of scientific data sets, multi-media resources such as audio/video in China",
         url: "http://www.doi.org.cn",
-        servers: [ "0.SERV/10.wfd" ]
+        servers: [ "0.SERV/10.wfd", "0.SERV/wfd" ]
+    },
+    nbd: {
+        name: "NBD",
+        fullname: "Nielsen Book Data",
+        scope: "books (?)",
+        comment: "discontinued",
+        url: "http://www.doi.nielsenbookdata.co.uk",
+        servers: [ "0.SERV/10.NBDRS" ]
     }
 }
