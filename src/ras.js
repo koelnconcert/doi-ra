@@ -81,10 +81,16 @@ module.exports = {
     },
     nbd: {
         name: "NBD",
-        fullname: "Nielsen Book Data",
+        fullname: "Nielsen BookData",
         scope: "books (?)",
         comment: "discontinued",
         url: "http://www.doi.nielsenbookdata.co.uk",
         servers: [ "0.SERV/10.NBDRS" ]
+    },
+    tso: {
+        name: "TSO",
+        fullname: "The Stationery Office",
+        comment: "transferred to Niels BookData",
+        servers: [ "0.SERV/10.TSO" ]
     }
 }
