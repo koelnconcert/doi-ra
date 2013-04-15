@@ -64,5 +64,12 @@ module.exports = {
         scope: "movies, television shows, and other commercial audio/video assets",
         url: "http://eidr.org",
         servers: [ "0.NA/10.5240" ]
+    },
+    idf: {
+        name: "IDF",
+        fullname: "Internationl DOI Foundation",
+        scope: "general IDF stuff, also serving Bowker and others",
+        url: "http://doi.org",
+        servers: [ "0.SERV/10" ]
     }
 }
